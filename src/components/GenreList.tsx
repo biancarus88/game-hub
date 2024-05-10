@@ -5,7 +5,7 @@ import {
   Image,
   List,
   ListItem,
-  Spinner,
+  //Spinner,
 } from "@chakra-ui/react";
 import useGenres, { Genre } from "../hooks/useGenres";
 import getCroppedImageUrl from "../services/image-url";
@@ -16,7 +16,8 @@ interface Props {
 }
 
 function GenreList({ selectedGenre, onSelectGenre }: Props) {
-  const { data, error, isLoading } = useGenres();
+  //const { data, error, isLoading } = useGenres();
+  const { data } = useGenres();
 
   //if (error) return null;
   //if (isLoading) return <Spinner />;
